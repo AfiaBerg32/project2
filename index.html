@@ -1,0 +1,68 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <script>
+            function validateForm() {
+              let x = document.forms["myForm"]["fname"].value;
+              if (x == "") {
+                alert("Submitted");
+                return false;
+              }
+            }
+            </script>
+        </head>
+        <style>
+            body{
+    font-family: Arial, Helvetica, sans-serif;
+    background-color: #2a004e;
+}
+h2{
+    padding-bottom: 3%;
+    padding-top: 1%;
+}
+.container{
+    background-color: #f5f5f5;
+    color: #2a004e;
+    border-radius: 5%;
+    align-items: center;
+    text-align: center;
+   
+}
+[class*="col-6"]{
+float: initial;
+padding: 7%;
+padding-left: 2%;
+padding-right: 2%;
+margin: 30%;
+margin-top: 7%;
+margin-bottom: 2%;
+
+}
+input[type=text],[type=email],[type=password],[type=date]{
+border: none;
+border-bottom: 2px solid #2a004e;
+width: 60%;
+text-align: center;
+font-weight: 400;
+padding: 2%;
+}
+            </style>
+        <body>
+          
+           <div class="container col-6">
+            <h2>Personal Data Logins</h2>
+           <form name="myForm" action="/action_page.php" onsubmit="return validateForm()" method="post">
+            <input type="text" name="fname" value="First Name" required><br>
+            <input type="text" name="fname" Value="Last Name" required><br>
+            <input type="email" name="fname" value="Email" required><br>
+            <input type="password" name="fname" value="Password" required><br>
+            <input type="date" name="fname" value="DD/MM/YYYY" required><br><br>
+           <button >Submit</button><br><br>
+           <a href="index1.html">Click to Next</a>
+           </div>
+          </form>
+         
+            </body>
+            </html>
